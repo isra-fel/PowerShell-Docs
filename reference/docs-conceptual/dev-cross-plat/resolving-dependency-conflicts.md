@@ -216,7 +216,7 @@ public static class Program
 ```
 
 This is a good practice since it minimizes the memory and filesystem I/O and uses the resources more
-efficiently. The unfortunate a side effect of this is that we won't know that the assembly fails to
+efficiently. An unfortunate side effect of this is that we won't know that the assembly fails to
 load until we reach the code path that tries to load the assembly.
 
 It can also create a timing condition for assembly load conflicts. If two parts of the same program
